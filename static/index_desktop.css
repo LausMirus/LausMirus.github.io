@@ -1,0 +1,49 @@
+* {
+    margin: 0%;
+    padding: 0cap;
+    list-style: none;
+    overflow: hidden;
+}
+
+@media (min-width: 1024px) {
+
+
+    .dashboard {
+        position: absolute;
+        width: 100%;
+        height: auto;
+    }
+
+    .nav_main {
+        padding-left: 20px;
+        padding-top: 120px;
+    }
+
+    .navdiv {
+        position: fixed;
+        width: 50px;
+        height: 400px;
+
+    }
+
+    .navlist {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        gap: 60px;
+        background-color: #7f9fde;
+        box-shadow: 3px 1px 50px #0000007b;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        border-radius: 50px;
+    }
+
+    .nav_icon_1,
+    .nav_icon_2,
+    .nav_icon_3,
+    .nav_icon_4 {
+        width: 32px;
+        height: 32px;
+    }
+}
+
