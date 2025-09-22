@@ -32,7 +32,7 @@
         flex-direction: column;
         gap: 60px;
         background-color: #7f9fde;
-        box-shadow: 3px 1px 50px #0000007b;
+        /* box-shadow: 3px 1px 50px #0000007b; */
         padding-top: 20px;
         padding-bottom: 20px;
         border-radius: 50px;
