@@ -1,0 +1,51 @@
+@media screen and (orientation: landscape) {
+    body::after {
+        
+    }
+} 
+
+/*@media screen and (orientation: portrait) {
+    body::after {
+        
+    }
+} */
+
+* {
+    margin: 0%;
+    padding: 0%;
+    overflow-x: hidden;
+}
+
+
+.dashboard1_img {
+    width: 100%;
+}
+
+.nav_container {
+    ul {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        bottom: 30%;
+        left: 50px;
+    }
+}
+
+.nav_img1,
+.nav_img2,
+.nav_img3,
+.nav_img4 {
+
+    width: 30px;
+    height: 30px;
+}
+
+.nav_img1:hover,
+.nav_img2:hover,
+.nav_img3:hover,
+.nav_img4:hover {
+    filter: drop-shadow(0 0 1px rgb(0, 208, 255));
+    width: 30px;
+    height: 30px;
+}
