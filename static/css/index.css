@@ -1,0 +1,30 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background: black;
+}
+
+/* Default desktop view */
+.dashboard_vid {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.5s ease;
+}
+
+/*  Mobile: rotate + fill properly */
+@media (max-width: 767px) {
+  .dashboard_vid {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 100vh;     /* swapped dimensions */
+    height: 100vw;
+    transform: translate(-50%, -50%) rotate(90deg); /*  correct order */
+    transform-origin: center center;
+    object-fit: cover;
+    z-index: 999;
+  }
+}
