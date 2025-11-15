@@ -7,7 +7,7 @@ body {
   list-style: none;
 }
 
-/* Default desktop view */
+/* Default desktop view */ 
 .dashboard_vid {
   position: fixed;
   width: 100%;
@@ -21,7 +21,7 @@ body {
 .navbar {
   z-index: 1;
   position: absolute;
-  padding-top: 40%;
+  padding-top: 10%;
 }
 
 .nav_img {
@@ -30,7 +30,8 @@ body {
 }
 
 .nav_container {
-  display: flex;
+
+  display: flex; 
   ul {
     list-style: none;
     display: flex;
@@ -58,7 +59,6 @@ body {
   .navbar {
     z-index: 1;
     position: absolute;
-
     .nav_img {
       width: 20px;
       height: 20px;
