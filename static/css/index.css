@@ -62,7 +62,6 @@ body {
   gap: 5px;
   display: flex;
   flex-direction: row;
-  /* padding-left: 1024px; */
 }
 
 .secret {
@@ -130,7 +129,7 @@ body {
     display: flex;
     flex-direction: column;
     top: 200px;
-    left: 220px;
+    left: 280px;
   }
 
   .secret {
@@ -156,6 +155,6 @@ body {
     border: .05px solid #a0c4ff;
     background-color: #a5c8fd;
     top: 310px;
-    left: 285px;
+    left: 345px;
   }
 }
