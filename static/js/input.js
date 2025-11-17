@@ -1,3 +1,14 @@
-function sudoer_alert() {
-    alert("you are not the sudoer !!");
-}
+
+document.querySelector("#secret_btn").addEventListener("click", () => {
+    let passwd = document.querySelector("#secret").value;
+
+    if (passwd == "sudoer") { 
+        sessionStorage.setItem("login","true")              
+        console.log("successful");
+        window.location.href ="/templates/bio.html";
+    }
+    else {
+        console.log("not successful");
+        alert("🚫 Naaaa !! , No Cheating 🚫");
+    }
+})
