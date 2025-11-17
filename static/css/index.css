@@ -42,15 +42,27 @@ body {
 }
 
 .login {
-  position: absolute;
-  z-index: 1;
+  position: fixed;
+  z-index: 1;  
+  display: flex;
+  flex-direction: row;
+  
+}
+.login_main {
+  position: fixed;
+  z-index: 1;  
+  display: flex;
+  flex-direction: row;
+  z-index: 999;
 }
 
 .login_container {
-  position: absolute;
-  padding-top: 10px;
-  padding-left: 1020px;
-
+  position: fixed;
+  padding-top: 10px; 
+  gap: 5px;
+  display: flex;
+  flex-direction: row;
+  /* padding-left: 1024px; */
 }
 
 .secret {
@@ -103,5 +115,47 @@ body {
       gap: 30px;
 
     }
+  }
+
+  .login {
+    gap: 20px;
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .login_container {
+    gap: 20px;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    top: 200px;
+    left: 220px;
+  }
+
+  .secret {
+    transform: rotate(90deg);
+    display: flex;
+    align-items: center;
+    height: 20px;
+    width: 150px;
+    border-radius: 20px;
+    border: .05px solid #a0c4ff;
+    background-color: #a5c8fd;
+    
+  }
+
+  .secret_btn {
+    display: flex;
+    position: fixed;
+    height: 20px;
+    width: 25px;
+    transform: rotate(90deg);
+    z-index: 999;
+    border-radius: 50px;
+    border: .05px solid #a0c4ff;
+    background-color: #a5c8fd;
+    top: 310px;
+    left: 285px;
   }
 }
