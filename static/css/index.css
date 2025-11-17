@@ -7,7 +7,7 @@ body {
   list-style: none;
 }
 
-/* Default desktop view */ 
+/* Default desktop view */
 .dashboard_vid {
   position: fixed;
   width: 100%;
@@ -31,13 +31,39 @@ body {
 
 .nav_container {
 
-  display: flex; 
+  display: flex;
+
   ul {
     list-style: none;
     display: flex;
     flex-direction: column;
     gap: 30px;
   }
+}
+
+.login {
+  position: absolute;
+  z-index: 1;
+}
+
+.login_container {
+  position: absolute;
+  padding-top: 10px;
+  padding-left: 1020px;
+
+}
+
+.secret {
+  border-radius: 20px;
+  border: .05px solid #a0c4ff;
+  background-color: #a5c8fd;
+}
+
+.secret_btn {
+  z-index: 999;
+  border-radius: 50px;
+  border: .05px solid #a0c4ff;
+  background-color: #a5c8fd;
 }
 
 /*  Mobile: rotate + fill properly */
@@ -59,6 +85,7 @@ body {
   .navbar {
     z-index: 1;
     position: absolute;
+
     .nav_img {
       width: 20px;
       height: 20px;
