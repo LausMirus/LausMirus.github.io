@@ -19,10 +19,12 @@
     font-family: "custom_times";
     src: url("/static/media/font/LinuxLibertine-RdWo.ttf");
 }
+
 @font-face {
     font-family: "custom_standard_2";
     src: url("/static/media/font/SherianThin-aYGgR.otf");
 }
+
 @font-face {
     font-family: "custom_standard_3";
     src: url("/static/media/font/TrenchThin-16R0.otf");
@@ -35,11 +37,14 @@ body {
 .first {
     padding: 50px;
 }
-.main_container{
+
+.main_container {
     display: flex;
-        align-items: center;
-    justify-content: center;
+    /* align-items: center;
+    justify-content: center; */
+    flex-direction: column;
 }
+
 .heading {
     color: #b30c62;
     font-family: "custom_standard";
@@ -58,7 +63,7 @@ body {
 
 .bio_paragr {
     /* color: #8a0775; */
-color: #fdfdfb;
+    color: #fdfdfb;
     font-family: "custom_times";
 
     word-wrap: break-word;
@@ -68,8 +73,10 @@ color: #fdfdfb;
 }
 
 .about_theme {
+    padding: 10px;
+    width: 100%;
+    background-color: #000000;
     bottom: 0;
-    position: fixed;
     display: flex;
     text-align: center;
     /* align-items: center;
@@ -81,5 +88,98 @@ color: #fdfdfb;
 
     p {
         font-family: "custom_standard_3";
+    }
+}
+
+.second {
+    padding: 20px;
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 100px;
+}
+
+.title2 {
+    color: #fdfdfb;
+    font-family: "custom_standard";
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+
+.skill1 {
+    padding-top: 10px;
+
+    .sub_Heading2 {
+        font-family: "custom_standard_3";
+        text-decoration: solid;
+        color: #fdfdfb;
+    }
+
+    p {
+        color: #fdfdfb5d;
+    }
+
+    .items_skills {
+        width: 90%;
+        background-color: #521c72;
+        padding: 10px;
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+    }
+}
+
+.skill2 {
+    padding-top: 20px;
+
+    .sub_Heading2 {
+        font-family: "custom_standard_3";
+        text-decoration: solid;
+        color: #fdfdfb;
+    }
+
+    p {
+        color: #fdfdfb5d;
+    }
+
+    .items_skills {
+        width: 90%;
+        background-color: #521c72;
+        padding: 10px;
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+    }
+}
+
+.skill3 {
+    padding-top: 20px;
+
+    .sub_Heading2 {
+        font-family: "custom_standard_3";
+        text-decoration: solid;
+        color: #fdfdfb;
+    }
+
+    p {
+        color: #fdfdfb5d;
+    }
+
+    .items_skills {
+        width: 90%;
+        background-color: #521c72;
+        padding: 10px;
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+    }
+}
+
+
+@media (max-width: 767px) {
+    body {
+        display: flexbox;
+        justify-content: center;
+        flex-direction: column;
     }
 }
