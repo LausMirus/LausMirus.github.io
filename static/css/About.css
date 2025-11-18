@@ -1,0 +1,85 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    border: 0cap;
+    overflow-x: hidden;
+}
+
+@font-face {
+    font-family: "signature_model";
+    src: url("/static/media/font/weddingday-font/WeddingdayPersonalUseRegular-1Gvo0.ttf");
+}
+
+@font-face {
+    font-family: "custom_standard";
+    src: url("/static/media/font/Arena-rvwaK.ttf");
+}
+
+@font-face {
+    font-family: "custom_times";
+    src: url("/static/media/font/LinuxLibertine-RdWo.ttf");
+}
+@font-face {
+    font-family: "custom_standard_2";
+    src: url("/static/media/font/SherianThin-aYGgR.otf");
+}
+@font-face {
+    font-family: "custom_standard_3";
+    src: url("/static/media/font/TrenchThin-16R0.otf");
+}
+
+body {
+    background-color: #110f18;
+}
+
+.first {
+    padding: 50px;
+}
+.main_container{
+    display: flex;
+        align-items: center;
+    justify-content: center;
+}
+.heading {
+    color: #b30c62;
+    font-family: "custom_standard";
+    text-transform: uppercase;
+    font-size: 60px;
+}
+
+.sub_Heading {
+    color: #8a0775;
+    font-family: "custom_times";
+    font-size: 20px;
+    padding-right: 40px;
+    padding-bottom: 10px;
+
+}
+
+.bio_paragr {
+    /* color: #8a0775; */
+color: #fdfdfb;
+    font-family: "custom_times";
+
+    word-wrap: break-word;
+    padding-right: 500px;
+    padding-bottom: 10px;
+
+}
+
+.about_theme {
+    bottom: 0;
+    position: fixed;
+    display: flex;
+    text-align: center;
+    /* align-items: center;
+    justify-content: center; */
+    color: #521c72;
+    flex-direction: column;
+    letter-spacing: .3px;
+    word-spacing: .5px;
+
+    p {
+        font-family: "custom_standard_3";
+    }
+}

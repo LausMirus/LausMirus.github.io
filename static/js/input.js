@@ -4,8 +4,8 @@ document.querySelector("#secret_btn").addEventListener("click", () => {
 
     if (passwd == "sudoer") { 
         localStorage.setItem("login","true")              
-        console.log("successful");
-        window.location.href ="/templates/bio.html";
+        console.log("successfull");
+        window.location.href ="/templates/About.html";
     }
     else {
         console.log("not successful");

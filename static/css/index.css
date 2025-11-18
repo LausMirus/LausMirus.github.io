@@ -7,6 +7,19 @@ body {
   list-style: none;
 }
 
+@font-face {
+  font-family: "signature_model";
+  src: url("/static/media/font/DarlingtonDemo-z8xjG.ttf");
+}
+@font-face {
+  font-family: "custom_standard";
+  src: url("/static/media/font/Arena-rvwaK.ttf");
+}
+@font-face {
+  font-family: "custom_times";
+  src: url("/static/media/font/LinuxLibertine-RdWo.ttf");
+}
+
 /* Default desktop view */
 .dashboard_vid {
   position: fixed;
