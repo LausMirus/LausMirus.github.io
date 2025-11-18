@@ -3,7 +3,7 @@ document.querySelector("#secret_btn").addEventListener("click", () => {
     let passwd = document.querySelector("#secret").value;
 
     if (passwd == "sudoer") { 
-        sessionStorage.setItem("login","true")              
+        localStorage.setItem("login","true")              
         console.log("successful");
         window.location.href ="/templates/bio.html";
     }
