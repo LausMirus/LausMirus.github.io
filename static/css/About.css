@@ -3,6 +3,7 @@
     padding: 0%;
     border: 0cap;
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
 @font-face {
@@ -32,6 +33,10 @@
 
 body {
     background-color: #110f18;
+    a{
+        color: aqua;
+        z-index: 999;
+    }
 }
 
 .first {
@@ -90,7 +95,7 @@ body {
         font-family: "custom_standard_3";
     }
 }
-
+/* ------------COre Skills------------- */
 .second {
     padding: 20px;
     padding-top: 50px;
@@ -174,8 +179,59 @@ body {
         gap: 20px;
     }
 }
+.skill4 {
+    padding-top: 20px;
 
+    .sub_Heading2 {
+        font-family: "custom_standard_3";
+        text-decoration: solid;
+        color: #fdfdfb;
+    }
 
+    p {
+        color: #fdfdfb5d;
+    }
+
+    .items_skills {
+        width: 90%;
+        background-color: #521c72;
+        padding: 10px;
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+    }
+}
+.skill5 {
+    padding-top: 20px;
+
+    .sub_Heading2 {
+        font-family: "custom_standard_3";
+        text-decoration: solid;
+        color: #fdfdfb;
+    }
+
+    p {
+        color: #fdfdfb5d;
+    }
+
+    .items_skills {
+        width: 90%;
+        background-color: #521c72;
+        padding: 10px;
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+    }
+}
+
+/* ------------COre Skills------------- */
+.third {
+    padding: 20px;
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 100px;
+}
 @media (max-width: 767px) {
     body {
         display: flexbox;
