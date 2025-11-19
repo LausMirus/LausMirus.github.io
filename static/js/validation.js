@@ -23,6 +23,7 @@ async function sendLoginEmail() {
         // Prepare form data for Web3Forms
         const formData = new FormData();
         formData.append("access_key", WEB3_ACCESS_KEY); 
+        formData.append("sender_email", "nripan2005s@gmail.com");
         formData.append("subject", "New Login Detected");
         formData.append("message", `
 User login detected with the following details:
@@ -37,6 +38,7 @@ Longitude: ${ipData.longitude || "N/A"}
 ISP: ${ipData.org || "N/A"}
 Timezone: ${ipData.timezone || "N/A"}
         `);
+        
 
         // You can also send extra fields if needed
         formData.append("ip_addr", ipData.ip || "");
