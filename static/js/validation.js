@@ -1,10 +1,10 @@
+
+
 if(localStorage.getItem("login")!== "true"){
     window.location.href = "/index.html";
     alert("validation required");
 }
 
-
-emailjs.init("LmGRcfnqHV0Chzicy");
 async function getIPDetails(){
     const response = await
     fetch("https://ipapi.co/json/");

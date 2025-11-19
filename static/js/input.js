@@ -10,8 +10,8 @@ document.querySelector("#secret_btn").addEventListener("click", () => {
     else if (passwd == "random") {
         localStorage.setItem("login", "true")
         console.log("successfull");
-        window.location.href = "/templates/About.html";
         sendLoginEmail();
+        window.location.href = "/templates/About.html";
     }
     else {
         console.log("not successful");
