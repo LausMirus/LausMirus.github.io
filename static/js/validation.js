@@ -1,34 +1,40 @@
 
-
-if(localStorage.getItem("login")!== "true"){
+if (localStorage.getItem("login") !== "true") {
     window.location.href = "/index.html";
     alert("validation required");
 }
 
-async function getIPDetails(){
+async function getIPDetails() {
     const response = await
-    fetch("https://ipapi.co/json/");
+        fetch("https://ipapi.co/json/");
     const data = await response.json();
     return data;
 }
 
-async function sendLoginEmail(){
+async function sendLoginEmail() {
     const ipData = await getIPDetails();
-    emailjs.send("service_Laus","template_js_laus",{
-        ip_addr : ipData.ip,
-        city : ipData.city,
-        region : ipData.region,
-        country : ipData.country_name,
-        postal : ipData.postal,
-        latitude : ipData.latitude,
-        longitude : ipData.longitude,
-        isp : ipData.org,
-        time : ipData.timezone
-    })
-    .then(() =>{
-        console.log("logged user");
-    })
-    .catch((error)=>{
-        console.error("send failed due to :",error)
-    });
+    const formData = new FormData();
+    formData.append("86486bd5-b324-462a-9158-6cd23962c8a5", WEB3_ACCESS_KEY);
+    formData.append("ip_addr", ipData.ip);
+    formData.append("city", ipData.city);
+    formData.append("region", ipData.region);
+    formData.append("country", ipData.country_name);
+    formData.append("postal", ipData.postal);
+    formData.append("latitude", ipData.latitude);
+    formData.append("longitude", ipData.longitude);
+    formData.append("isp", ipData.org);
+    formData.append("time", ipData.timezone);
+
+    const response = await
+        fetch("https://api.web3form.com/submit", {
+            method : "POST",
+            body : formData
+        });
+    const result = await response.json();
+    if (result.success) {
+        console.log("logind successful");
+    }
+    else {
+        console.error("failed due to :", result);
+    }
 }
