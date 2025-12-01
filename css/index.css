@@ -1,0 +1,49 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background: black;
+  list-style: none;
+}
+
+@font-face {
+  font-family: "signature_model";
+  src: url("/static/media/font/DarlingtonDemo-z8xjG.ttf");
+}
+@font-face {
+  font-family: "custom_standard";
+  src: url("/static/media/font/Arena-rvwaK.ttf");
+}
+@font-face {
+  font-family: "custom_times";
+  src: url("/static/media/font/LinuxLibertine-RdWo.ttf");
+}
+
+.dashboard{
+    z-index: -999;
+    display: flex;
+    justify-content: center;
+    img{
+        width: 80%;
+        height: auto;
+    }
+}
+
+/* nav_main{
+    
+} */
+
+/* ------------mobile version----------- */
+
+@media (max-width: 767px) {
+    .dashboard{
+    z-index: -999;
+    display: flex;
+    justify-content: center;
+    img{
+        width: 300%;
+        height: auto;
+    }
+}
+}
