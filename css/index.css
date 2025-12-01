@@ -44,6 +44,7 @@ body {
         z-index: -999;
         display: flex;
         justify-content: center;
+        align-items: center;
 
         img {
             width: 300%;
