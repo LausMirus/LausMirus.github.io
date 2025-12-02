@@ -40,7 +40,14 @@ body {
 /* ------------mobile version----------- */
 
 @media (max-width: 767px) {
-    
+html,
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background: black;
+    list-style: none;
+}
     .dashboard {
         overflow: hidden;
         z-index: -999;
@@ -48,9 +55,42 @@ body {
         justify-content: center;
         align-items: center;
 
+
         img {
-            width: 300%;
+            padding-left: 80px;
+            width: 350%;
             height: auto;
         }
     }
+
+    .nav_main {
+        padding: 0%;
+        position: fixed;
+        z-index: 999;
+        display: flex;
+        top: 30%;
+        /* background-color: #cc4ac5; */
+    }
+    .nav_container{
+        /* background-color: #cc4ac5; */
+                padding-left: 35%;
+
+    }
+    .nav_list {
+        padding: 10px;
+        background-color: #cc4ac5;
+        border-radius: 100px;
+        ul {
+            text-align: center;
+            padding: 0%;
+            list-style: none;
+            gap: 80px;
+            display: flex;
+            flex-direction: column;
+        }
+    }
+    .icons{
+        width: 20px;
+    }
+
 }
