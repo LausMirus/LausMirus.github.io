@@ -40,7 +40,9 @@ body {
 /* ------------mobile version----------- */
 
 @media (max-width: 767px) {
+    
     .dashboard {
+        overflow: hidden;
         z-index: -999;
         display: flex;
         justify-content: center;
