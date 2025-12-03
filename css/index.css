@@ -92,5 +92,29 @@ body {
     .icons{
         width: 20px;
     }
+    .login_main{
+        z-index: 9999;
+        position: fixed;
+        display: flex;
+        top: 20px;
+        right: 5%;
+        gap: 10px;
+    }
+    #input_login{
+        border-radius: 100px;
+        width: 130px;
+        color: #f6caf7;
+        background-color: #993e9e4a;
+        border: none;
+    }
+
+    #button_login{
+        border-radius: 100px;
+        width: 20px;
+        text-align: center;
+        color: #f6caf7;
+        background-color: #993e9e;
+        border: 2px #f6c0f8 solid;
+    }
 
 }
