@@ -33,24 +33,79 @@ body {
     }
 }
 
-.login_main{
+.nav_main {
+    padding: 0%;
+    position: fixed;
+    z-index: 999;
+    display: flex;
+    top: 20%;
+    /* background-color: #cc4ac5; */
+}
+
+.nav_container {
+    /* background-color: #cc4ac5; */
+    padding-left: 35%;
+
+}
+
+.nav_list {
+    padding: 10px;
+    background-color: #cc4ac5;
+    border-radius: 10px;
+
+    ul {
+        text-align: center;
+        padding: 0%;
+        list-style: none;
+        gap: 80px;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.icons {
+    width: 20px;
+}
+
+
+.login_main {
     position: fixed;
     display: flex;
     flex-direction: row;
-    top: 0;
+    top: 10px;
+    right: 5%;
+    gap: 20px;
+}
+
+#input_login {
+    border-radius: 40px;
+    color: #f6caf7;
+    background-color: #993e9e4a;
+    border: none;
+}
+
+#button_login {
+    border-radius: 100px;
+    width: 20px;
+    text-align: center;
+    color: #f6caf7;
+    background-color: #993e9e;
+    border: 2px #f6c0f8 solid;
 }
 
 /* ------------mobile version----------- */
 
 @media (max-width: 767px) {
-html,
-body {
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background: black;
-    list-style: none;
-}
+
+    html,
+    body {
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background: black;
+        list-style: none;
+    }
+
     .dashboard {
         overflow: hidden;
         z-index: -999;
@@ -74,15 +129,18 @@ body {
         top: 30%;
         /* background-color: #cc4ac5; */
     }
-    .nav_container{
+
+    .nav_container {
         /* background-color: #cc4ac5; */
-                padding-left: 35%;
+        padding-left: 35%;
 
     }
+
     .nav_list {
         padding: 10px;
         background-color: #cc4ac5;
-        border-radius: 100px;
+        border-radius: 10px;
+
         ul {
             text-align: center;
             padding: 0%;
@@ -92,10 +150,12 @@ body {
             flex-direction: column;
         }
     }
-    .icons{
+
+    .icons {
         width: 20px;
     }
-    .login_main{
+
+    .login_main {
         z-index: 9999;
         position: fixed;
         display: flex;
@@ -103,7 +163,8 @@ body {
         right: 5%;
         gap: 10px;
     }
-    #input_login{
+
+    #input_login {
         border-radius: 100px;
         width: 130px;
         color: #f6caf7;
@@ -111,7 +172,7 @@ body {
         border: none;
     }
 
-    #button_login{
+    #button_login {
         border-radius: 100px;
         width: 20px;
         text-align: center;
