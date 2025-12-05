@@ -5,6 +5,7 @@ body {
     overflow: hidden;
     background: black;
     list-style: none;
+    user-select: none;
 }
 
 @font-face {
@@ -89,11 +90,32 @@ body {
     width: 20px;
     text-align: center;
     color: #f6caf7;
-    background-color: #993e9e;
-    border: 2px #f6c0f8 solid;
+    background-color: #993e9e4a;
+    border: 0;
+    /* border: 2px #f6c0f8 solid; */
+}
+
+.footer_main {
+    position: absolute;
+    display: flex;
+    bottom: 0;
+    left: 25%;
+}
+
+.footer_container {
+    color: #cc4ac5;
+    display: flex;
+    justify-content: center;
+}
+
+.footer_content {
+    display: grid;
+    flex-direction: column;
+    text-align: center;
 }
 
 /* ------------mobile version----------- */
+
 
 @media (max-width: 767px) {
 

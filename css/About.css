@@ -1,0 +1,16 @@
+body{
+    background-color: #000000;
+    color: #cc4ac5;
+    padding: 20px;
+}
+.heading{
+    font-size: 60px;
+    color: aliceblue;
+}
+.sub_Heading{
+    color: aliceblue;
+    font-size: 18px;
+}
+.bio_paragr{
+    color: rgb(150, 150, 150);
+}
