@@ -1,11 +1,14 @@
-function login() {
 
+
+function login() {
     var pass = document.querySelector('#input_login').value;
-    if (pass == "pass") {
+    if (pass == "pass"){
+        localStorage.setItem("loggedIn" , "true");
         alert("user");
         window.location.href = "/templates/about.html";
+
     }
-    else if (pass == ""){
+    else if (pass == "") {
         alert("enter a string");
     }
     else {

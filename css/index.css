@@ -8,19 +8,35 @@ body {
     user-select: none;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0%;
+    border: 0cm;
+}
+
 @font-face {
     font-family: "signature_model";
-    src: url("/static/media/font/DarlingtonDemo-z8xjG.ttf");
+    src: url("/static/fonts/DarlingtonDemo-z8xjG.ttf");
 }
 
 @font-face {
     font-family: "custom_standard";
-    src: url("/static/media/font/Arena-rvwaK.ttf");
+    src: url("/static/fonts/Arena-rvwaK.ttf");
 }
 
 @font-face {
     font-family: "custom_times";
-    src: url("/static/media/font/LinuxLibertine-RdWo.ttf");
+    src: url("/static/fonts/LinuxLibertine-RdWo.ttf");
+}
+
+@font-face {
+    font-family: "custom_standard_3";
+    src: url("/static/fonts/TrenchThin-16R0.otf");
 }
 
 .dashboard {
@@ -96,22 +112,43 @@ body {
 }
 
 .footer_main {
-    position: absolute;
-    display: flex;
+    position: fixed;
     bottom: 0;
-    left: 25%;
+    color: #f6c0f8;
+    display: flex;
+    width: 100%;
+    height: 50px;
+    padding: 10px;
+    background-color: #00000061;
 }
 
 .footer_container {
-    color: #cc4ac5;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    padding-left: 20%;
+    text-align: center;
+    gap: 5px;
 }
 
-.footer_content {
-    display: grid;
-    flex-direction: column;
-    text-align: center;
+.voiceline {
+    font-family: custom_standard_3;
+    letter-spacing: 1px;
+
+}
+
+.obsession {
+    font-family: custom_standard_3;
+    font-size: small;
+    /* font-weight: lighter; */
+    font-variant: small-caps;
+    letter-spacing: 1px;
+}
+
+.name {
+        font-family: custom_standard_3;
+        font-weight: bolder;
+        text-transform:capitalize;
+        font-size: 20px;
 }
 
 /* ------------mobile version----------- */
@@ -201,6 +238,49 @@ body {
         color: #f6caf7;
         background-color: #993e9e;
         border: 2px #f6c0f8 solid;
+    }
+
+    .footer_main {
+        position: fixed;
+        bottom: 0;
+        color: #f6c0f8;
+        display: flex;
+        width: 100%;
+        height: 50px;
+        padding: 10px;
+        background-color: #00000061;
+    }
+
+    .footer_container {
+        display: flex;
+        flex-direction: column;
+        align-content: safe;
+        justify-content: center;
+        padding-left: 20px;
+        padding-right: 20px;
+        gap: 5px;
+        /* padding: 10px; */
+    }
+
+    .voiceline {
+        font-family: custom_standard_3;
+        width: fit-content;
+        font-size: 10px;
+        font-weight: lighter;
+
+    }
+
+    .obsession {
+        font-family: custom_standard_3;
+        font-size: 10px;
+        font-weight: lighter;
+    }
+
+    .name {
+        font-family: custom_standard_3;
+        font-weight: bolder;
+        font-size: 12px;
+        /* text-transform: uppercase */
     }
 
 }

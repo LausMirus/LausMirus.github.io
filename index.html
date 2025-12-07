@@ -4,8 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script>
+        if (localStorage.getItem("loginKey") !== "true") {
+            alert("Please login first!");
+            window.location.href = "../index.html";
+        }
+    </script>
     <link rel="stylesheet" href="/css/index.css">
     <script src="/js/login.js" defer></script>
+    <script src="/js/encrypt.js"defer></script>
     <title></title>
 </head>
 
@@ -15,7 +22,8 @@
         <!-- <video src=""></video> -->
     </div>
     <div class="login_main">
-        <input type="password" maxlength="10" required id="input_login" value="" ondrop="return false" ondragover="return false" oncopy="return false" onpaste="return false" oncut="return false">
+        <input type="password" maxlength="10" required id="input_login" value="" ondrop="return false"
+            ondragover="return false" oncopy="return false" onpaste="return false" oncut="return false">
         <button type="submit" onclick="login()" id="button_login">›</button>
     </div>
     <nav class="nav_main">
@@ -35,15 +43,14 @@
         </div>
     </nav>
 
-    <footer class="footer_main">
+    <div class="footer_main">
         <div class="footer_container">
-            <div class="footer_content">
-                <p class="inspiration">This webpage is inspired by Reyna — forged in shadows, crowned in power,andthirsting for glory.</p>
-                <p class="reyna_obsessed">(Btw, I’m obsessed with Reyna.)</p>
-                <h5 class="name">- Laus Mirus -</h5>
-            </div>
+
+            <p class="voiceline">This webpage is inspired by Reyna — forged in shadows, crowned in power, and thirsting for glory.</p>
+            <p class="obsession">(Btw, I’m obsessed with Reyna.)</p>
+            <p class="name">- Laus Mirus -</p>
         </div>
-    </footer>
+    </div>
 </body>
 
 </html>

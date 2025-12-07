@@ -4,9 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Biodata</title>
-    <script src="/static/js/validation.js"></script>
-    <link rel="stylesheet" href="/css/About.css">
+    <script>
+        if (localStorage.getItem("loggedIn") !== "true") {
+            alert("Please login first!");
+            window.location.href = "../index.html"; 
+        }
+    </script>
+    <link rel="stylesheet" href="../css/About.css">
 
 </head>
 
@@ -84,66 +88,66 @@
             </div>
 
             <!-- ------------Technical skills------------------ -->
-            
+
+        </div>
+        <div class="third">
+            <div class="title2">
+                <h1 class="heading2">Technical Skills</h1>
             </div>
-            <div class="third">
-                <div class="title2">
-                    <h1 class="heading2">Technical Skills</h1>
-                </div>
 
-                <div class="skill1">
-                    <h4 class="sub_Heading2">Programming Languages</h4>
-                    <div class="items_skills">
-                        <p>Python</p>
-                        <p>C-Lang</p>
-                        <p>C++</p>
-                        <p>PHP</p>
-                        <p>JavaScript</p>
-                        <p>Bash-Scripting</p>
-                        <p>Markdown-Lang</p>
-                    </div>
-                </div>
-
-                <div class="skill2">
-                    <h4 class="sub_Heading2">Web Development</h4>
-                    <div class="items_skills">
-                        <p>HTML5</p>
-                        <p>CSS3</p>
-                        <p>PHP</p>
-                        <p>JavaScript</p>
-                    </div>
-                </div>
-
-                <div class="skill3">
-                    <h4 class="sub_Heading2">Database</h4>
-                    <div class="items_skills">
-                        <p>MySQL</p>
-                        <p>SQLite</p>
-                    </div>
-                </div>
-
-                <div class="skill4">
-                    <h4 class="sub_Heading2">Tools/Platform</h4>
-                    <div class="items_skills">
-                        <p>Git/Github</p>
-                        <p>Obsidian</p>
-                    </div>
-                </div>
-
-                <div class="skill5">
-                    <h4 class="sub_Heading2">Framework</h4>
-                    <div class="items_skills">
-                        <p>Django</p>
-                    </div>
+            <div class="skill1">
+                <h4 class="sub_Heading2">Programming Languages</h4>
+                <div class="items_skills">
+                    <p>Python</p>
+                    <p>C-Lang</p>
+                    <p>C++</p>
+                    <p>PHP</p>
+                    <p>JavaScript</p>
+                    <p>Bash-Scripting</p>
+                    <p>Markdown-Lang</p>
                 </div>
             </div>
-            
-            <div class="about_theme">
-                <p>This webpage is inspired by Reyna — forged in shadows, crowned in power, and thirsting for glory.</p>
-                <p>(Btw, I’m obsessed with Reyna.)</p>
-                <p>- Laus Mirus -</p>
+
+            <div class="skill2">
+                <h4 class="sub_Heading2">Web Development</h4>
+                <div class="items_skills">
+                    <p>HTML5</p>
+                    <p>CSS3</p>
+                    <p>PHP</p>
+                    <p>JavaScript</p>
+                </div>
+            </div>
+
+            <div class="skill3">
+                <h4 class="sub_Heading2">Database</h4>
+                <div class="items_skills">
+                    <p>MySQL</p>
+                    <p>SQLite</p>
+                </div>
+            </div>
+
+            <div class="skill4">
+                <h4 class="sub_Heading2">Tools/Platform</h4>
+                <div class="items_skills">
+                    <p>Git/Github</p>
+                    <p>Obsidian</p>
+                </div>
+            </div>
+
+            <div class="skill5">
+                <h4 class="sub_Heading2">Framework</h4>
+                <div class="items_skills">
+                    <p>Django</p>
+                </div>
             </div>
         </div>
+
+        <div class="about_theme">
+            <p>This webpage is inspired by Reyna — forged in shadows, crowned in power, and thirsting for glory.</p>
+            <p>(Btw, I’m obsessed with Reyna.)</p>
+            <p>- Laus Mirus -</p>
+        </div>
+    </div>
     </div>
 </body>
 
