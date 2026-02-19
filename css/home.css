@@ -1,0 +1,27 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body,
+html {
+    width: 100%;
+    height: 100%;
+}
+
+.nav_main {
+    position: fixed;
+    z-index: 999;
+    color: aquamarine;
+    background-color: #fff;
+    width: 100vw;
+    height: 8vh;
+}
+
+.page1 {
+    width: 100vw;
+    height: 100vh;
+    background-color: aqua;
+}
