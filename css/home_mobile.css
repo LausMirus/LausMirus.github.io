@@ -36,9 +36,35 @@ html {
         width: 100vw;
         height: 10vh;
         border-top: 2px solid #870578;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .reyna_voiceline {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .voiceline {
+            text-align: center;
+            font-size: 12px;
+            color: aliceblue;
+        }
+
+        .obsession {
+            font-size: 8px;
+            color: aliceblue;
+        }
+
+        .name {
+            font-size: 8px;
+            color: aliceblue;
+        }
     }
 
     .nav_left {
+
         /* display: none; */
         ul {
             display: flex;
