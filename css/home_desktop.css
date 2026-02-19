@@ -1,0 +1,39 @@
+@media (min-width:1024px) {
+    .nav_main {
+        position: fixed;
+        z-index: 999;
+        background-color: #000000;
+        width: 100vw;
+        height: 8vh;
+        display: flex;
+        align-items: center;
+        padding: 10px;
+        border-bottom: 2px solid #870578;
+    }
+
+    .page1 {
+        width: 100vw;
+        height: 100vh;
+        background-color: #000000;
+    }
+
+    footer {
+        background-color: #000000;
+        width: 100vw;
+        height: 10vh;
+        border-top: 2px solid #870578;
+    }
+
+    .nav_left {
+        ul {
+            display: flex;
+            flex-direction: row;
+            gap: 2rem;
+            list-style: none;
+
+            a {
+                color: aliceblue;
+            }
+        }
+    }
+}
