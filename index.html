@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="/css/home_desktop.css">
     <link rel="stylesheet" href="/css/font.css">
     <link rel="stylesheet" href="/css/about.css">
+    <link rel="stylesheet" href="/css/github.css">
 </head>
 
 <body>
@@ -39,6 +40,17 @@
                 welcome hooman
             </p>
         </div>
+
+
+        <div class="toggle_github" style="display: none;">
+            <p class="mobile_error">Oops !!! , this web is not made for small screen user</p>
+            <img class="github_graph"
+                src="https://github-readme-activity-graph.vercel.app/graph?username=LausMirus&theme=high-contrast"
+                alt="">
+        </div>
+
+
+
         <div class="toggle_about" style="display: none;">
             <p class="mobile_error">Oops !!! , this web is not made for small screen user</p>
             <div class="container_about">
@@ -47,15 +59,37 @@
                 </div>
                 <div class="bio">
                     <h1>Greeting, I'm LausMirus.</h1><br>
-                    <p>✨ Just a <a href="https://www.google.com/search?q=graphite+artist">Graphite Artist</a>, exploring Linux and networking, still a beginner in coding, with every experiment revealing something new.
-                    i am obsessed with <strong>Dark Academic</strong> and <strong>chess</strong>.
-                    Every day, I fight for my life trying to figure out what Linux is actually doing under the hood, and test my mental patience by playing Valorant with random brain-dead teammates.✨
+                    <p>✨ Just a <a href="https://www.google.com/search?q=graphite+artist">Graphite Artist</a>, exploring
+                        Linux and networking, still a beginner in coding, with every experiment revealing something new.
+                        i am obsessed with <strong>Dark Academic</strong> and <strong>chess</strong>.
+                        Every day, I fight for my life trying to figure out what Linux is actually doing under the hood,
+                        and test my mental patience by playing Valorant with random brain-dead teammates.✨</p>
 
-</p>
+                </div>
+
+                <div class="toggle_gallery" style="display: none;">
+                    <h1>hey from gallery</h1>
+                </div>
+                <div class="toggle_social" style="display: none;">
+                    <h1>hey from Social</h1>
+                </div>
+                <div class="toggle_projects" style="display: none;">
+                    <h1>hey from Projects</h1>
+                </div>
+                <div class="toggle_more" style="display: none;">
+                    <h1>hey from More</h1>
                 </div>
             </div>
+
+            <div class="more_about">
+                <button class="link_manipulate" onclick="show_gallery()">Gallery</button>
+                <button class="link_manipulate" onclick="show_social()">Social</button>
+                <button class="link_manipulate" onclick="show_projects()">Projects</button>
+                <button class="link_manipulate" onclick="show_more()">More</button>
+
+            </div>
         </div>
-            
+
 
     </div>
 
@@ -77,6 +111,7 @@
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="script/timer.js"></script>
     <script src="script/home.js"></script>
+    <script src="script/about.js"></script>
 </body>
 
 </html>

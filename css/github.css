@@ -1,0 +1,10 @@
+.github_graph{
+    width: 800px;
+}
+.more_about{
+    padding-top: 20px;
+    display:flex;
+    justify-content: center;
+    align-content: end;
+    gap: 50px;
+}

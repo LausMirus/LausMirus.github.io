@@ -18,12 +18,18 @@ body {
 }
 .container_about{
     display: flex;
-    flex-shrink: row;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
     gap: 30px;
+     h1{
+        color: aliceblue;
+    }
 }
 .bio{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
     a{
         color: aliceblue;
         font-weight: bold;
@@ -31,4 +37,5 @@ body {
     }
     width: 600px;
     color: aliceblue;
+   
 }
