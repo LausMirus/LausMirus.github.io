@@ -1,0 +1,106 @@
+@media (min-width:1024px) {
+    .nav_main {
+        font-family: minimal1;
+        letter-spacing: 1px;
+        position: fixed;
+        z-index: 999;
+        background-color: #190019;
+        width: 100vw;
+        height: auto;
+        display: flex;
+        align-items: center;
+        padding: 10px;
+        border-bottom: 2px solid #6D001A;
+        justify-content: center;
+    }
+
+    .nav_container {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .right_side {
+        display: flex;
+
+        .timer_text {
+            font-family: minimal1;
+            letter-spacing: 1px;
+            color: aliceblue;
+        }
+    }
+
+    .page1 {
+        width: 100vw;
+        height: 90vh;
+        display: flex;
+        background-color: #0D0D0D;
+        align-items: center;
+        justify-content: center;
+
+        .mobile_error {
+            display: none;
+            color: #870578;
+            font-size: larger;
+        }
+
+    }
+
+    .intro {
+        font-family: minimal1;
+        color: aliceblue;
+        font-size: 50px;
+    }
+
+
+
+
+
+
+    /* ++++++++++++++++++++++++++++++++++// footer //+++++++++++++++++++++++++++++++++++ */
+    footer {
+        font-family: minimal1;
+        letter-spacing: 1px;
+        background-color: #000000;
+        width: 100vw;
+        height: 10vh;
+        border-top: 2px solid #870578;
+
+        .reyna_voiceline {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .voiceline {
+            padding-top: 10px;
+            text-align: center;
+            font-size: 12px;
+            color: aliceblue;
+        }
+
+        .obsession {
+            font-size: 8px;
+            color: aliceblue;
+        }
+
+        .name {
+            font-size: 8px;
+            color: aliceblue;
+        }
+    }
+
+    .nav_left {
+        ul {
+            display: flex;
+            flex-direction: row;
+            gap: 2rem;
+            list-style: none;
+
+            a {
+                color: aliceblue;
+            }
+        }
+    }
+}
