@@ -1,4 +1,13 @@
 @media (min-width:1024px) {
+
+.toggle_home{
+    display: 1 ;
+}
+.toggle_about{
+    display: none ;
+}
+
+
     .nav_main {
         font-family: minimal1;
         letter-spacing: 1px;
@@ -10,7 +19,7 @@
         display: flex;
         align-items: center;
         padding: 10px;
-        border-bottom: 2px solid #6D001A;
+        border-bottom: 2px solid #870578;
         justify-content: center;
     }
 
@@ -46,16 +55,24 @@
 
     }
 
+    .link_manipulate {
+        background: none;
+        border: none;
+        font-size: 17.5px;  
+        color: aliceblue;
+        font-family: minimal1;
+        letter-spacing: 1px;
+    }
+    .link_manipulate:hover{
+        cursor: pointer;
+    }
+
     .intro {
         font-family: minimal1;
         color: aliceblue;
         font-size: 50px;
+
     }
-
-
-
-
-
 
     /* ++++++++++++++++++++++++++++++++++// footer //+++++++++++++++++++++++++++++++++++ */
     footer {

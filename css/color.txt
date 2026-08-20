@@ -1,3 +1,4 @@
 #0D0D0D; jet-black
 #190019; enbony-purple
 #6D001A
+#870578

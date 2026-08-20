@@ -14,16 +14,11 @@
     <nav class="nav_main">
         <div class="nav_container">
             <div class="nav_left">
-                <ul><a href="">
-                        <li>Home</li>
-                    </a>
-                    <a target="_blank" rel="noopener noreferrer" href="https://github.com/LausMirus">
-                        <li>Github</li>
-                    </a>
-                    <a href="">
-                        <li onclick="show_about()">About</li>
-                    </a>
-
+                <ul>
+                    <button class="link_manipulate" onclick="show_home()">Home</button>
+                    <button class="link_manipulate" onclick="show_github()">Github</button>
+                    <button class="link_manipulate" onclick="show_about()">about</button>
+                    <button class="link_manipulate" onclick="show_dotfile()">Dotfiles</button>
                 </ul>
             </div>
             <div class="right_side">
@@ -33,14 +28,26 @@
             </div>
         </div>
     </nav>
+
     <div class="page1">
-        <p class="mobile_error">Oops !!! , this web is not made for small screen user</p>
-        <p class="intro">
-            welcome hooman
-        </p>
+
+
+        <div class="toggle_home" style="display: block;">
+            <p class="mobile_error">Oops !!! , this web is not made for small screen user</p>
+            <p class="intro">
+                welcome hooman
+            </p>
+        </div>
+        <div class="toggle_about" style="display: none;">
+            <p class="mobile_error">Oops !!! , this web is not made for small screen user</p>
+            <p class="intro">
+                welcome to about
+            </p>
+        </div>
+            
+
     </div>
-    <div class="page2">
-    </div>
+
     <footer>
         <div class="reyna_voiceline">
             <p class="voiceline">This webpage is inspired by Reyna — forged in shadows, crowned in power, and thirsting
@@ -58,8 +65,7 @@
         integrity="sha512-P2IDYZfqSwjcSjX0BKeNhwRUH8zRPGlgcWl5n6gBLzdi4Y5/0O4zaXrtO4K9TZK6Hn1BenYpKowuCavNandERg=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="script/timer.js"></script>
-
-    <script src="/script/home.js"></script>
+    <script src="script/home.js"></script>
 </body>
 
 </html>
