@@ -37,7 +37,7 @@ function show_gallery() {
             console.log(gallery);
         }
         else if (toggle4 === "block") {
-            gallery.style.display = 'none';
+            gallery.style.display = 'flex';
             social.style.display = 'none';
             projects.style.display = 'none';
             more.style.display = 'none';
@@ -48,7 +48,7 @@ function show_gallery() {
             console.log(gallery);
         }
         else {
-            gallery.style.display = 'block';
+            gallery.style.display = 'flex';
             social.style.display = 'none';
             projects.style.display = 'none';
             more.style.display = 'none';
@@ -91,7 +91,6 @@ function show_social() {
         if (toggle5 === "none") {
             social.style.display = 'flex';
             gallery.style.display = 'none';
-            social.style.display = 'none';
             projects.style.display = 'none';
             more.style.display = 'none';
             about.style.display = 'none';
@@ -103,7 +102,6 @@ function show_social() {
         else {
             social.style.display = 'flex';
             gallery.style.display = 'none';
-            social.style.display = 'none';
             projects.style.display = 'none';
             more.style.display = 'none';
             about.style.display = 'none';

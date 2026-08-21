@@ -45,3 +45,13 @@ body {
     /* justify-content: space-evenly; */
     
 }
+/* .toggle_gallery{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+    h{
+        color: aliceblue;
+    }
+} */
