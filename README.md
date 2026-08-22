@@ -1,2 +1,2 @@
 currently , website is under maintanance.....
-still its working on screen size ≥1024
+still working on screen size ≥1024
